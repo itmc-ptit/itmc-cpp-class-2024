@@ -5,4 +5,3 @@ int main() {
     return 0;
 }
 //tran xa thien tan
-

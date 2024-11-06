@@ -7,6 +7,6 @@ int main()
     cout << " moi nhap a " ; cin >> a ; 
     b = (int)a ; 
     c = a - b ; 
-    cout << " phan thap cua a la " <<  c  ;
+    cout << " phan thap phan  cua a la " <<  c  ;
     return 0 ; 
 }

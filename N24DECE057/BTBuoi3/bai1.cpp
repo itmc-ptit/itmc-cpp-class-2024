@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 int main() {
-    float m,n;cin>>m>>n;
-    int sum=int(m)+int(n);
-    cout<<sum;
+    int n;cin>>n;
+    cout<<n;
     return 0;
 }

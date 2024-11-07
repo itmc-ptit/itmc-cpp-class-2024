@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 int main() {
-    string s;
-    getline(cin,s);
-    cout<<"Xin Chao "<<s;
+    int n,m;cin>>m>>n;
+    int i=m;m=n;n=i;
+    cout<<m<<" "<<n;
     return 0;
 }

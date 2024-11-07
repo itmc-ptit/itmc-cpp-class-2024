@@ -10,5 +10,6 @@ int main()
 
     cout << (char)a << "\n";
     
+    
     return 0;
 }

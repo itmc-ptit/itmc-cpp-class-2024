@@ -1,0 +1,59 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a , b , c , d;
+    cout << " nhap vao a , b , c , d: ";
+    cin >> a >> b >> c >> d;
+    if ( a >= b )
+    { 
+        if(c >= d)
+        {
+            if (a >= c)
+            {
+                cout << a << " la so lon nhat";
+            }
+            else
+            {
+                cout << c << " la so lon nhat";
+            }
+        }
+        else
+        {
+            if ( a >= d)
+            {
+                cout << a << " la so lon nhat";
+            }
+            else
+            {
+                cout << d << " la so lon nhat";
+            }
+        }
+    }
+    else
+    {
+        if(c >= d)
+        {
+            if (b >= c)
+            {
+                cout << b << " la so lon nhat";
+            }
+            else
+            {
+                cout << c << " la so lon nhat";
+            }
+        }
+        else
+        {
+            if (b >= d)
+            {
+                cout << b << " la so lon nhat";
+            }
+            else
+            {
+                cout << d << " la so lon nhat";
+            }
+        }
+    }
+    system ("pause");
+}

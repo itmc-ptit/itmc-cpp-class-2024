@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a , b , x;
+    cout << "nhap vao 2 so a va b :";
+    cin >> a >> b;
+    cout << " vay x = " << -(float(b)/a);
+    system ("pause");
+}

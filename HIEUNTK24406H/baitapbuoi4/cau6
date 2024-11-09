@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int nam;
+    cout << "nhap vao nam bat ky : ";
+    cin >> nam;
+    if (nam % 4 == 0 and nam % 100 != 0)
+    {
+        cout << "nam ban vua nhap la nam nhuan ";
+    }
+    else
+    {
+        cout << " nam ban vua nhap khong la nam nhuan ";
+    }
+    system ("pause");
+}

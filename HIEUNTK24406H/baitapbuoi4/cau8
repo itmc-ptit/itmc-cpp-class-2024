@@ -1,0 +1,34 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{   
+    int a , b , c;
+    cout << "nhap vao 3 canh cua tam giac : ";
+    cin >> a >> b >> c;
+    if ( a + b > c and a + c > b and c + b > a)
+    {
+        cout << "3 canh cua ban lap nen 1 tam giac\n";
+        if(c == sqrt(a*a + b*b) or a == sqrt(c*c + b*b) or b == sqrt(a*a + c*c))
+        {
+            cout << "tam giac do la tam giac vuong ";
+        }
+        else if(a == b and b == c )
+        {
+            cout << "tam giac do la tam giac deu";
+        }
+        else if(a==b and b!=c)
+        {
+            cout << "do la tam giac can";
+        }
+        else
+        {
+            cout << "do la tam giac thuong";
+        }
+    }
+    else
+    {
+        cout << "khong la tam giac";
+    }
+    system ("pause");
+}

@@ -1,0 +1,15 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int a , b , c , d;
+    cout << " nhap toa do diem A :\n"; 
+    cin >> a >> b;
+    cout << " toa do diem A la : " << "A(" << a << "," << b << ")\n";
+    cout << " nhap toa do diem B :\n"; 
+    cin >> c >> d;
+    cout << " toa do diem B la : " << "B(" << c << "," << d << ")\n";
+    cout << "khoang cach giua 2 diem A va B la :" << sqrt(pow((c-a),2) + pow((d-b),2));
+    system("pause");
+}

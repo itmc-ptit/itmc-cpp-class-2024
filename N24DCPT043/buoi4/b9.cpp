@@ -11,11 +11,12 @@ int main(){
     cin >> c;
     if (a==0){
         if (b==0){
+            if (c==0) {
             cout << "Phuong trinh vo so nghiem";
-        } else {
+            } else {
             cout << "Phuong trinh vo nghiem";
-        }
-    } else {
+             }
+       } else {
         double x = -b/a;
         cout << "Phuong trinh co nghiem " << x << endl;
     } 

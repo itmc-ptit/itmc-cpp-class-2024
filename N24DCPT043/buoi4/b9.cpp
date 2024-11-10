@@ -19,6 +19,7 @@ int main(){
        } else {
         double x = -b/a;
         cout << "Phuong trinh co nghiem " << x << endl;
+        }
     } 
     else {
         double denta=b*b-4*a*c;

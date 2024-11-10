@@ -4,7 +4,6 @@ using namespace std;
 int main(){
     char a;
     cin >>a; 
-    char b=toupper(a);
-    cout <<b;
-
+    if (islower(a)) {cout<<toupper(a);}
+else { a=tolower(a);  cout<<a; }
 }

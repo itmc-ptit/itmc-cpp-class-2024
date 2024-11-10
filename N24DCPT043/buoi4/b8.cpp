@@ -12,7 +12,7 @@ int main() {
     if (a+b<=c||a+c<=b||c+b<=a){
         cout << "Khong phai la tam giac";
     }
-    else if (a==b,b==c) {
+    else if (a==b && b==c) {
         cout << "La tam giac deu";
     }
     else if (a*a+b*b==c*c||a*a+c*c==b*b||c*c+b*b==a*a){

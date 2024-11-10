@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    char a;
+    cout << " nhap vao 1 ki tu chu : ";
+    cin >> a;
+    if((a >= 'a' and a <= 'z') or (a >='A' and a <='Z'))
+    {
+        if (a == tolower(a))
+        {
+            cout << "ki tu vua nhap la chu thuong";
+        }
+        else if (a == toupper(a))
+        {
+            cout << "ki tu vua nhap la chu hoa";
+        }
+    }
+    else 
+    {
+        cout << a << " khong phai la chu cai";
+    }
+    system("pause");
+}

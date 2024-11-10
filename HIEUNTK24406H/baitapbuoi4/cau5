@@ -1,0 +1,27 @@
+#include<iostream>
+#include <algorithm>
+using namespace std;
+int main()
+{
+    int max , a;
+    cout << " nhap vao 2 so dau tien : ";
+    cin >> max >> a;
+    if( a >= max)
+    {
+        max = a;
+    }
+    cout << "nhap vao so tiep theo :";
+    cin >> a;
+    if( a >= max)
+    {
+        max = a;
+    }
+    cout << "nhap vao so cuoi cung :";
+    cin >> a;
+    if( a >= max)
+    {
+        max = a;
+    }
+    cout << max << " la so lon nhat";
+    system ("pause");
+}

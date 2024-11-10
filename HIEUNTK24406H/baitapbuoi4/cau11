@@ -1,0 +1,154 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    int a;
+    cin >> a;
+
+    if (a <= 10)
+    {
+        switch (a)
+        {
+            case 0: 
+            cout << "khong"; 
+            break;
+
+            case 1: 
+            cout << "mot"; 
+            break;
+
+            case 2: 
+            cout << "hai"; 
+            break;
+
+            case 3: 
+            cout << "ba"; 
+            break;
+
+            case 4: 
+            cout << "bon"; 
+            break;
+
+            case 5: 
+            cout << "nam"; 
+            break;
+
+            case 6: 
+            cout << "sau"; 
+            break;
+
+            case 7: 
+            cout << "bay"; 
+            break;
+
+            case 8: 
+            cout << "tam"; 
+            break;
+
+            case 9: 
+            cout << "chin"; 
+            break;
+
+            case 10: 
+            cout << "muoi"; 
+            break;
+        }
+    }
+    else if (a > 10 && a < 100)
+    {
+        int chuc = a / 10;
+        int donvi = a % 10;
+        
+        string hangChuc, hangDonvi;
+
+        switch (chuc)
+        {
+            case 1: 
+            hangChuc = "muoi"; 
+            break;
+
+            case 2: 
+            hangChuc = "hai muoi"; 
+            break;
+
+            case 3: 
+            hangChuc = "ba muoi"; 
+            break;
+
+            case 4: 
+            hangChuc = "bon muoi"; 
+            break;
+
+            case 5: 
+            hangChuc = "nam muoi"; 
+            break;
+
+            case 6: 
+            hangChuc = "sau muoi"; 
+            break;
+
+            case 7: 
+            hangChuc = "bay muoi"; 
+            break;
+
+            case 8: 
+            hangChuc = "tam muoi"; 
+            break;
+
+            case 9: 
+            hangChuc = "chin muoi"; 
+            break;
+
+        }
+
+        switch (donvi)
+        {
+            case 1: 
+            hangDonvi = "mot"; 
+            break;
+
+            case 2: 
+            hangDonvi = "hai"; 
+            break;
+
+            case 3: 
+            hangDonvi = "ba"; 
+            break;
+
+            case 4: 
+            hangDonvi = "bon"; 
+            break;
+
+            case 5: 
+            hangDonvi = "lam"; 
+            break;
+
+            case 6: 
+            hangDonvi = "sau"; 
+            break;
+
+            case 7: 
+            hangDonvi = "bay"; 
+            break;
+
+            case 8: 
+            hangDonvi = "tam"; 
+            break;
+
+            case 9: 
+            hangDonvi = "chin"; 
+            break;
+
+            case 0: 
+            hangDonvi = ""; 
+            break;
+        }
+
+        string ketqua = hangChuc + " " + hangDonvi;
+        cout << ketqua;
+    }
+    system("pause");
+    return 0;
+}

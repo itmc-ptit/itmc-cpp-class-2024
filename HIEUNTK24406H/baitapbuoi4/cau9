@@ -1,0 +1,43 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{   
+    float x1 , x2 , a , b , c , delta;
+    cout << " nhap vao 3 so a b c :";
+    cin >> a >> b >> c;
+    delta = b*b - 4*a*c;
+    if(a == 0)
+    {
+        if(b !=0 )
+    {
+        cout << " vay x = " << -(float(c)/b);
+    }
+    else if (b == 0 && c == 0)
+    {
+        cout << "phuong trinh vo so nghiem";
+    }
+    else
+    {
+        cout << "phuong trinh vo nghiem";
+    }
+    }
+    else if(delta < 0)
+    {
+        cout << " phuong trinh vo nghiem ";
+    }
+    else if( delta > 0 )
+    {
+        cout << "phuong trinh co 2 nghiem pb ";
+        x1 = (-b + sqrt(delta))/(2*a);
+        x2 = (-b - sqrt(delta))/(2*a);
+        cout << "voi " << x1 << "," << x2 << " la 2 nghiem cua phuong trinh";
+    }
+    else
+    {
+        cout << " phuong trinh co nghiem kep ";
+        x1 = -b/(2*a);  
+        cout << "voi x1 = x2 = " << x1;
+    }
+    system ("pause");
+}

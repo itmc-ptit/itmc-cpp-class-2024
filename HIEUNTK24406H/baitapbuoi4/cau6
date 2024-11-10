@@ -5,7 +5,7 @@ int main()
     int nam;
     cout << "nhap vao nam bat ky : ";
     cin >> nam;
-    if (nam % 4 == 0 and nam % 100 != 0)
+    if ((nam % 4 == 0 && nam % 100 != 0) || (nam % 400 == 0))
     {
         cout << "nam ban vua nhap la nam nhuan ";
     }

@@ -7,7 +7,22 @@ int main()
     cout << " nhap vao 3 so a b c :";
     cin >> a >> b >> c;
     delta = b*b - 4*a*c;
-    if(delta < 0)
+    if(a == 0)
+    {
+        if(b !=0 )
+    {
+        cout << " vay x = " << -(float(c)/b);
+    }
+    else if (b == 0 && c == 0)
+    {
+        cout << "phuong trinh vo so nghiem";
+    }
+    else
+    {
+        cout << "phuong trinh vo nghiem";
+    }
+    }
+    else if(delta < 0)
     {
         cout << " phuong trinh vo nghiem ";
     }

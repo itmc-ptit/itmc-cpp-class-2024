@@ -3,18 +3,9 @@
 using namespace std;
 int main()
 {
-    int a , b , c , d , m1 , m2;
+    int a , b , c , d;
     cout << "nhap a , b , c , d : ";
     cin >> a >> b >> c >> d;
-    m1 = max (a,b);
-    m2 = max(c,d);
-    if(m1>m2)
-    {
-        cout << "vay so lon nhat la " << m1;
-    }
-    else
-    {
-        cout << "vay so lon nhat la "<< m2;
-    }
+    cout << "vay so lon nhat la " << max(max(a,b) , max(c,d));
     system ("pause");
 }

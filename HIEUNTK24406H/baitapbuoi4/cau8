@@ -6,18 +6,18 @@ int main()
     int a , b , c;
     cout << "nhap vao 3 canh cua tam giac : ";
     cin >> a >> b >> c;
-    if ( a + b > c and a + c > b and c + b > a)
+    if ( a + b > c && a + c > b && c + b > a)
     {
         cout << "3 canh cua ban lap nen 1 tam giac\n";
-        if(c == sqrt(a*a + b*b) or a == sqrt(c*c + b*b) or b == sqrt(a*a + c*c))
+        if(c == sqrt(a*a + b*b) || a == sqrt(c*c + b*b) || b == sqrt(a*a + c*c))
         {
             cout << "tam giac do la tam giac vuong ";
         }
-        else if(a == b and b == c )
+        else if(a == b && b == c )
         {
             cout << "tam giac do la tam giac deu";
         }
-        else if(a==b and b!=c)
+        else if(a == b || a == c || b == c )
         {
             cout << "do la tam giac can";
         }

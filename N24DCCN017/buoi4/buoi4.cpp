@@ -82,11 +82,11 @@ int main(){
     float a9,b9,c9;
     cout<<"nhap a b c: ";cin>>a9>>b9>>c9;
     if(a9==0) {
-        if (a9==0&&b9==0) cout<<"phuong trinh co vo so nghiem";
-    else if (a9!=0){ float kq=(b9*(-1)/a9);
+        if (b9==0&&c9==0) cout<<"phuong trinh co vo so nghiem";
+    else if (b9!=0){ float kq=(c9*(-1)/b9);
         if (kq==0) kq*=-1;
         cout<<"nghiem cua phuong trinh la: "<<kq<<endl;
-        } 
+        }
     else cout<<"phuong trinh vo nghiem"<<endl;
     }
     else{

@@ -49,14 +49,17 @@ int main(){
 
     cout<<"bai6"<<endl;
     int n6;
+    bool kt=false;
     cout<<"nhap so nam: ";cin>>n6;
-    if(!(n6%4)) cout<<n6<<" la nam nhuan"<<endl;
-    else cout<<n6<<" la nam khong nhuan"<<endl;
+    if (!(n6%100)) n6/=100;
+    if (!(n6%4)) cout<<n6<<" la nam nhuan"<<endl;
+    else cout<<n6<<" khong la nam nhuan"<<endl;
 
     cout<<"bai7"<<endl;
     float a7,b7;
     cout<<"nhap a va b: ";cin>>a7>>b7;
-    if (a7!=0){ float kq=(b7*(-1)/a7);
+    if (a7==0&&b7==0) cout<<"phuong trinh co vo so nghiem";
+    else if (a7!=0){ float kq=(b7*(-1)/a7);
         if (kq==0) kq*=-1;
         cout<<"nghiem cua phuong trinh la: "<<kq<<endl;
     }
@@ -71,18 +74,28 @@ int main(){
     else{
     if(pow(a8,2)+pow(b8,2)==pow(c8,2)) cout<<"3 canh tao thanh 1 tam giac vuong"<<endl;
     else if(a8==b8&&b8==c8) cout<<"3 canh tao thanh 1 tam giac deu"<<endl;
-    else if((a8==b8&&a8!=c8)||(b8==c8&&b8!=a8)||(c8==a8&&c8!=b8)) cout<<"3 canh tao thanh 1 tam giac can"<<endl;
+    else if((a8==b8)||(b8==c8)||(c8==a8)) cout<<"3 canh tao thanh 1 tam giac can"<<endl;
     else cout<<"3 canh tao thanh 1 tam giac thuong"<<endl;
     }
 
     cout<<"bai9"<<endl;
     float a9,b9,c9;
     cout<<"nhap a b c: ";cin>>a9>>b9>>c9;
+    if(a9==0) {
+        if (a9==0&&b9==0) cout<<"phuong trinh co vo so nghiem";
+    else if (a9!=0){ float kq=(b9*(-1)/a9);
+        if (kq==0) kq*=-1;
+        cout<<"nghiem cua phuong trinh la: "<<kq<<endl;
+        } 
+    else cout<<"phuong trinh vo nghiem"<<endl;
+    }
+    else{
     float delta=pow(b9,2)-4*a9*c9;
     if(delta<0) cout<<"phuong trinh vo nghiem"<<endl;
     else if (delta==0) {float kq=(-b9/(2*a9)); cout<<"phuong trinh co 1 nghiem kep la: "<<kq<<endl;}
     else {float x1=(-b9+sqrt(delta))/(2*a9), x2=(-b9-sqrt(delta))/(2*a9);
     cout<<"phuong trinh co 2 nghiem la: "<<x1<<" va "<<x2<<endl;
+        }
     }
 
     cout<<"bai10"<<endl;

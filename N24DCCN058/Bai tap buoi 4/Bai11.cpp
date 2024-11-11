@@ -8,7 +8,7 @@ int main() {
     if ( a < 10 ){
         a == 0 ? cout << "khong" : cout << b[a] ;
     }else if ( a > 9 && a < 20){
-        cout << b[n] << " " << b[m] ; 
+        cout << b[0] << " " << b[m] ; 
     }else{
         cout << b[n] <<" " << "muoi" << " " << b[m];
     }

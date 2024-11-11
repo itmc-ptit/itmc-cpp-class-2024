@@ -5,7 +5,7 @@ int main(){
     int a;
     cout << "Please enter 1 number between 1 and 7" <<  endl;
     cin >> a;
-    if (1 <= a) && ( a<= 7);
+    if ((1 <= a) && ( a<= 7)){
     switch (a)
     {
     case 1:
@@ -34,4 +34,5 @@ int main(){
         break;
     }
     return 0;
+}
 }

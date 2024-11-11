@@ -2,15 +2,22 @@
 using namespace std;
 int main()
 {
-    double a,b,c,d;
-    cout <<"nhap 4 so ngau nhien ";
-    cin>>a>>b>>c>>d;
-    double max=a;
-    if(max<b)
-        max=b;
-    if(max<c)
-        max =c;
-    if(max<d)
-        max =d;
-    cout <<max<<" la so lon nhat ";  
+    double a,max;
+    cout <<"nhap so thu nhat ";
+    cin >>a;
+    max=a;
+    cout <<"nhap so thu hai ";
+    cin >>a;
+    if(max<a)
+        max = a;
+    cout <<"nhap so thu ba ";
+    cin >>a;
+    if(max<a)
+        max = a;   
+    cout <<"nhap so thu tu ";
+    cin >>a;
+    if(max<a)
+        max = a;
+    cout <<"so lon nhat trong 4 so la "<<max;
+
 }

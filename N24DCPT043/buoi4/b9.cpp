@@ -17,7 +17,7 @@ int main(){
             cout << "Phuong trinh vo nghiem";
              }
        } else {
-        double x = -b/a;
+        double x = -c/b;
         cout << "Phuong trinh co nghiem " << x << endl;
         }
     } 

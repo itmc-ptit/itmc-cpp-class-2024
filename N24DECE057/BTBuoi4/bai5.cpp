@@ -1,10 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-    float a,b,c,d;
-    cin>>a>>b>>c>>d;
-    a=((a+b)+abs(a-b))/2;
-    b=((c+d)+abs(c-d))/2;
-    if (a>b) cout<<a; else cout<<b;
+    int max1=INT_MIN;
+    for (int i=0;i<4;i++) {
+        int n;cin>>n;
+        if (n>max1) max1=n;
+    }
+    cout<<max1;
     return 0;
 }

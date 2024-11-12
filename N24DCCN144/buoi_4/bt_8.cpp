@@ -11,7 +11,7 @@ int main()
     cout << "hay nhap vao so do ba canh cua mot tam giac: ";
     cin >> a >> b >> c;
 
-    if ( (a + b < c) || (a + c < b) || (b + c < a) ) 
+    if ( (a + b <= c) || (a + c <= b) || (b + c <= a) ) 
     {
         cout << "day khong phai la mot tam giac";
     }

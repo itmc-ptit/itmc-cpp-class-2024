@@ -7,28 +7,25 @@ int main()
     float a, b, c;
     cout << "nhap 3 canh a b c: ";
     cin >> a >> b >> c;
-
-    if (a + b > c && b + c > a && c + a > b)
+    if (a + b > c, a + c > b, b + c > a)
     {
         if (a == b && b == c)
         {
-            cout << "la tam giac deu" << endl;
+            cout << "day la tam giac deu ";
         }
         else if (a == b || b == c || c == a)
         {
-            cout << "la tam giac can" << endl;
+            cout << "day la tam giac can";
         }
-        else if (pow(a, 2) + pow(b, 2) == pow(c, 2) || pow(b, 2) + pow(c, 2) == pow(a, 2) || pow(c, 2) + pow(a, 2) == pow(b, 2))
+        else if (a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a)
         {
-            cout << "la tam giac vuong" << endl;
+            cout << "day la tam giac vuong ";
         }
         else
-        {
-            cout << "la tam giac thuong" << endl;
-        }
+            cout << "day la tam gaic thuong ";
     }
     else
     {
-        cout << "ko phai tam giac dau" << endl;
+        cout << " khong phai tam giac ";
     }
 }

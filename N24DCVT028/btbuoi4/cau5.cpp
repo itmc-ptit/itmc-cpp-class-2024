@@ -1,28 +1,22 @@
-#include <iostream>
+
+#include<iostream>
 using namespace std;
+int main()
+{
+    int num, maxnum;
+    cout << "nhap so dau tien: ";
+    cin >> maxnum;
+    for (int i = 2; i <= 4; ++i)
 
-int main() {
-    int a, b, c, d, maxNum;
+    {
+        cout << "nhap so thu " << i << ": ";
+        cin >> num;
+        if (num > maxnum)
+        {
+            maxnum = num;
+        }
+    }
 
-  
-    cout << "nhap so thu nhat: ";
-    cin >> a;
-    maxNum = a;  
-
-    cout << "nhap so thu hai: ";
-    cin >> b;
-    if (b > maxNum) maxNum = b;  
-
-    cout << "nhap so thu ba: ";
-    cin >> c;
-    if (c > maxNum) maxNum = a;  
-
-    cout << "nhap so thu tu: ";
-    cin >> d;
-    if (d > maxNum) maxNum = b;  
-
-    // In ra số lớn nhất
-    cout << "so lon nhat la: " << maxNum << endl;
-
+    cout << "so lon nhat la: " << maxnum;
     return 0;
 }

@@ -33,9 +33,7 @@ int main()
         }
         else
         {
-            cout << "vo nghiem thuc" << endl;
+            cout << "vo nghiem thuc" ;
         }
     }
-
-    return 0;
 }

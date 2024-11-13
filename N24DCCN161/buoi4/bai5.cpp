@@ -7,17 +7,15 @@ int main(){
     cin>>a;
     if (a>max){
         max=a;
-        cin>>a;
     }
-    if (a>max){
-        max=a;
-        cin>>a;
-    }
+    cin>>a;
     if (a>max){
         max=a;
     }
-
-    
+    cin>>a;
+    if (a>max){
+        max=a;
+    }
     cout<<"MAX:"<<max<<endl;
     return 0;
 }

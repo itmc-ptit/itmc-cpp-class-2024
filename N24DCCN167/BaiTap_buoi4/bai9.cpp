@@ -6,7 +6,11 @@ int main()
     int a, b, c;
     cin >> a >> b >> c;
     int delta = pow(b, 2) - 4 * a * c;
-    if (delta < 0)
+    if (a == 0) {
+        cout << "Ko phai pt bac 2. " << endl;
+    }
+    else {
+         if (delta < 0)
     {
         cout << "PT vo nghiem. " << endl;
     }
@@ -17,6 +21,7 @@ int main()
     }
     else
         cout << "PT co nghiem kep: x = " << (-b) / (2 * a) << endl;
+    }
 
     return 0;
 }

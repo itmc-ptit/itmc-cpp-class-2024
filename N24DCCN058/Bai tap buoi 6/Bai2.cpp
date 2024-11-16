@@ -11,7 +11,7 @@ int main() {
         cin>> arr[i];
         arr1[arr[i]] = arr[i] ;
     }
-    cout << "So lon nhat la:" << arr1.rbegin()->first << endl ;
-    cout << "So nho nhat la:" << arr1.begin()->first  ;
+    cout << "So lon nhat la: " << arr1.rbegin()->first << endl ;
+    cout << "So nho nhat la: " << arr1.begin()->first  ;
     return 0;
 }

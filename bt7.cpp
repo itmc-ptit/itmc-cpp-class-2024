@@ -34,6 +34,7 @@ if (m != p|| n != q||(m!=p&&n!=p)) {
         for (int j = 0; j < n; j++) {
             cout << sum[i][j] << " ";
         }
+	    cout<<endl;
     }
     }
 return 0;

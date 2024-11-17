@@ -14,5 +14,5 @@ int main(){
     }
     cout<<"tong mang: "<<tong<<endl;
     cout<<"tich mang: "<<tich<<endl;
-    cout<<"trung binh mang: "<<float(tong/n);
+    cout<<"trung binh mang: "<<(float) tong/n;
 }

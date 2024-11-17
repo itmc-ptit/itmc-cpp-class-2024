@@ -41,6 +41,10 @@ int main(){
     for(int i=0;i<=n-1;i++){
         b[a[i]-1]+=1;
     }
+    for(int i=0;i<=(max-min);i++){
+        cout<<b[i]<<" ";
+    }
+    cout<<"\n";
     int m1=0,m2=0;
     for(int i=0;i<=(max-min);i++){
         if(m1<b[i]){

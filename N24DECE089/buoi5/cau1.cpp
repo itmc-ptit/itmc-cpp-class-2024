@@ -8,8 +8,8 @@ int main()
     {
         cout << " moi nhap a " ; 
         cin >> a ; 
-        if ( a % 2 == 0 ) { ++cnt1 ;  }
-        else if ( a > 0 && a % 2 != 0 ) { ++cnt2 ; }
+        if ( a % 2 == 0 && a > 0  ) { ++cnt1 ;  }
+        else if ( a > 0 && (a % 2) != 0 ) { ++cnt2 ; }
         if ( a < 0 ) { break ; }
     }
     cout << " da nhap " << cnt1 << " so chan " << endl ; 

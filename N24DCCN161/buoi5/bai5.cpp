@@ -15,9 +15,10 @@ int main(){
     cin>>a;
     for (int i=1;i<a;i++){
         if(ngto(i)){
-            if(ngto(i)<a){
-                cout<<i<<endl;
-            }
+            cout<<i<<endl;
         }
     }
+    return 0;
 }
+    
+    

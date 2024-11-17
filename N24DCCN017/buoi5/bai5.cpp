@@ -16,7 +16,10 @@ bool kiemtra(int n){
 }
 int main(){
     int x;
-    cout<<"nhap n: ";cin>>x;
+    cout<<"nhap n la so nguyen duong >1: ";cin>>x;
+    while(x<=1){
+        cout<<"nhap n la so nguyen duong >1: ";cin>>x;
+    }
     cout<<"cac so nguyen to be hon n la: ";
     for(int i=2;i<x;i++){
         if (kiemtra(i)) cout<<i<<" ";

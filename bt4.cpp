@@ -20,7 +20,7 @@ int main(){
         	so=a[i];
 		}
 	}
-	cout<<"ptu co so lan xh nhieu nhat:"<<so;
+	cout<<"ptu co so lan xh nhieu nhat:"<<so<<endl;
 	cout<<"so lan xh:"<<tanso;
 	return 0;
 }

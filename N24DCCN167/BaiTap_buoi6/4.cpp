@@ -7,7 +7,7 @@ int main()
     int arr[n];
     for (int i = 0; i < n; i++)
         cin >> arr[i];
-    int maxCount = 0, maxIdx;
+    int maxCount = arr[0], maxIdx;
     for (int i = 0; i < n; i++)
     {
         int j = 0, count = 1;

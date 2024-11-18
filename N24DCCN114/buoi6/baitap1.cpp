@@ -1,4 +1,5 @@
 #include <iostream>
+#include <limits>
 using namespace std;
 int main()
 {
@@ -16,7 +17,7 @@ int main()
         tong +=mang[i];
         tich*=mang[i];
     }
-    double tb=tong/n;
+    double tb=(double)tong/n;
     cout <<"tong cac phan tu cua mang la "<<tong<<endl;
     cout <<"tich cac phan tu cua mang la "<<tich<<endl;
     cout <<"gia tri trung binh cac phan tu cua mang la "<<tb<<endl;

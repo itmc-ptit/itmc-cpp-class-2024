@@ -1,21 +1,6 @@
 #include <iostream>
-#include <math.h>
 
 using namespace std;
-
-bool checkNgTo(int n)
-{
-    if (n == 1) return false;
-
-    if (n == 2) return true;
-
-    for (int i = 2; i <= sqrt(n) + 1; i++)
-    {
-        if (n % i == 0) return false;
-    }
-
-    return true;
-}
 
 int main()
 {
@@ -25,24 +10,45 @@ int main()
 
     int k = n;
     int i = 2;
+    int m = 0;
 
     cout << n << " = ";
     while (k != 1)
     {
-        if (k % i == 0 && checkNgTo(i))
+        if (k % i == 0)
         {
-            cout << i;
+            m++;
 
-            k = k/i;
-            if (k != 1)
+            k = k/i;     
+
+            if (k % i != 0)
             {
-                cout << " X ";
-            }          
+                if (m == 1)
+                {
+                    cout << i;
+
+                    if (k != 1)
+                    {
+                        cout << " x ";
+                    }
+                }
+                else if (m > 1)
+                {
+                    cout << i << "^" << m;
+                    
+                    if (k != 1)
+                    {
+                        cout << " x ";
+                    }
+                }
+            }
+             
         }
         else
         {
-            i++;         
+            i++; 
+                    
+            m = 0;
         }
-    }
-    
+    }    
 }

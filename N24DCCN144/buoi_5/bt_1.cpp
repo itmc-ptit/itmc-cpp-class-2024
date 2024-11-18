@@ -31,10 +31,6 @@ int main()
 
             running = false;
         }
-        else if (n == 0)
-        {
-            continue;
-        }
         else
         {
             checkChan(n) ? tChan++ : tLe++;

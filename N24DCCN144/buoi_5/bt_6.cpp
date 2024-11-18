@@ -11,13 +11,16 @@ bool checkSoHoanHao(int n)
     while (running)
     {
         if ((i+1)*(i+1) > n) running = false;
-        if (n % i == 0) 
+        if (i*i == n) 
+        {
+            tong = tong + i;
+            running = false;
+        }
+        else if (n % i == 0) 
         {
             tong = tong + i;
             tong = tong + n/i;
         }
-
-        if (i*i == n) break;
 
         i++;  
     }

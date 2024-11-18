@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 int main(){
-    char a,b;
+    char a;
     cin>> a;
-    b=a+32;
-    cout<<b;
+    int b=a;
+    cout<< b;
 }

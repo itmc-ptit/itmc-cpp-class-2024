@@ -13,7 +13,7 @@ int main() {
     }
     cout << "Tong: " << S  << endl ; 
     cout << "Tich: " << P << endl ;
-    cout << "Trung Binh Cong: " << S/n << endl ; 
+    cout << "Trung Binh Cong: " << float(S)/n << endl ; 
 
     return 0;
 }

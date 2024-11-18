@@ -15,6 +15,7 @@ int main() {
     
     for (int i = 0 ; i < firstappear.size(); i++){
         if ( Maxappear < arr1[firstappear[i]]){
+             Maxappear = arr1[firstappear[i]];
              Save.clear() ;
              Save.push_back(firstappear[i]);
         }else if ( Maxappear == arr1[firstappear[i]]){

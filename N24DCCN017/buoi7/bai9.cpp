@@ -1,11 +1,15 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 int fibbonaci(int n){
-    if(n==1||n==2){
-        return 1;
+    vector<int> v;
+    v.push_back(0);
+    v.push_back(1);
+    for(int i=2;i<=n;i++){
+        v.push_back(v[i-1]+v[i-2]);
     }
-    else return fibbonaci(n-1)+fibbonaci(n-2);
+    return(v[n]);
 }
 int main(){
-    cout<<fibbonaci(9);
+    cout<<fibbonaci(3);
 }

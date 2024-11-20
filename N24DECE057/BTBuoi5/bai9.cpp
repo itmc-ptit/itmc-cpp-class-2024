@@ -9,9 +9,9 @@ int main() {
         while (j<=n) {
             if (j==1) 
 			  for (int o=1;o<=k/2;o++) cout<<" "; 
-                else { for (int o=1;o<=k;o++) cout<<" ";
-                          for (int o=1;o<=a;o++) cout<<"*";
-                        }
+                else for (int o=1;o<=k;o++) cout<<" ";
+            for (int o=1;o<=a;o++) cout<<"*";
+                        
         j++;
         }
         cout<<endl;

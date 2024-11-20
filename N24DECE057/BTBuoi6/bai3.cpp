@@ -11,7 +11,7 @@ int main() {
     }
     int i=0;
     while (i!=n-1) {
-        int k,nn=a[i];
+        int k=i,nn=a[i];
         for (int j=i+1;j<n;j++) 
              if (nn>a[j]) {
                 nn=a[j];

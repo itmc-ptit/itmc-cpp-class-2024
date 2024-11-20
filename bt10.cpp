@@ -1,9 +1,13 @@
 #include <iostream>
+<<<<<<< HEAD
 #include <cmath>
+=======
+>>>>>>> 6a063f3998ea5e077a56daa60c0fd06d33464407
 using namespace std;
 
 int main()
 {
+<<<<<<< HEAD
     int n;
     cin >> n;
 
@@ -42,5 +46,34 @@ int main()
     }
     cout << endl;
 
+=======
+    int day;
+    cin >> day;
+
+    switch (day)
+    {
+    case 2:
+        cout << "Monday" << endl;
+        break;
+    case 3:
+        cout << "Tuesday" << endl;
+        break;
+    case 4:
+        cout << "Wednesday" << endl;
+        break;
+    case 5:
+        cout << "Thursday" << endl;
+        break;
+    case 6:
+        cout << "Friday" << endl;
+        break;
+    case 7:
+        cout << "Saturday" << endl;
+        break;
+    default:
+        cout << "Sunday" << endl;
+    }
+
+>>>>>>> 6a063f3998ea5e077a56daa60c0fd06d33464407
     return 0;
 }

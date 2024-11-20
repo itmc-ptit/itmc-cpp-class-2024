@@ -1,4 +1,5 @@
 #include <iostream>
+<<<<<<< HEAD
 #include <cmath>
 using namespace std;
 
@@ -23,6 +24,17 @@ int main()
         cout << "Day la so nguyen to." << endl;
     else
         cout << "Day khong phai la so nguyen to." << endl;
+=======
+using namespace std;
+
+int main()
+{
+    int a, b, c, d;
+    cin >> a >> b >> c >> d;
+
+    int maxNum = max(max(a, b), max(c, d));
+    cout << maxNum << endl;
+>>>>>>> 6a063f3998ea5e077a56daa60c0fd06d33464407
 
     return 0;
 }

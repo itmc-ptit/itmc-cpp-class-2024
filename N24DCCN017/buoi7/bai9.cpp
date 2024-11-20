@@ -4,8 +4,7 @@ int fibbonaci(int n){
     if(n==1||n==2){
         return 1;
     }
-    n=fibbonaci(n-1)+fibbonaci(n-2);
-    return n;
+    else return fibbonaci(n-1)+fibbonaci(n-2);
 }
 int main(){
     cout<<fibbonaci(9);

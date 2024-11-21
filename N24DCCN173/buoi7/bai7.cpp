@@ -6,9 +6,15 @@ string removeDuplicates(string str)
     string a;
     for(int i = 0; i < str.size(); i++)
     {
-        s.insert(str[i]);
+        if(a.find(str[i]) == string::npos)
+        {
+            a += str[i];
+        }
+        else
+        {
+            continue;
+        }
     }
-    for(auto it : s) a += it;
     return a;
 }
 int main()

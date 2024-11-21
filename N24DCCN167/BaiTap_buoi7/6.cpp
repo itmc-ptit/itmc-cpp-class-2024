@@ -3,12 +3,15 @@ using namespace std;
 int countWords(string str)
 {
     int count = 0;
-    for (int i = 0; i < str.length(); i++)
+    for (int i = 1; i < str.length(); i++)
     {
-        if (str[i] != ' ' && str[i + 1] == ' ')
+        if (str[i] == ' ' && str[i - 1] != ' ')
             count++;
     }
-    return count + 1;
+    if (str[str.length() - 1] != ' ')
+        return count + 1;
+
+    return count;
 }
 int main()
 {

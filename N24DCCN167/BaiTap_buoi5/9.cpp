@@ -2,7 +2,8 @@
 using namespace std;
 int main()
 {
-    int n = 5,m = 5;
+    int n,m;
+    cin >> n >> m;
     int MAX_PINETREE_IN_ROW = 5;
     int k_to = n / MAX_PINETREE_IN_ROW;
     if (n % MAX_PINETREE_IN_ROW > 0)

@@ -3,16 +3,19 @@
 using namespace std ; 
 string removeDuplicates(string str) 
 {
-    for ( int i = 0 ; i < str.size() - 1 ; ++i )
+    for ( int i = 0 ; i < str.size()  ; ++i )
     {
-        if ( str[i+1] == str[i] ) { str.erase(i+1,1) ; --i ; }
+       for ( int j = i + 1 ;  j < str.size() ; ++j ) 
+       {
+         if ( str[i] == str[j] ) { str.erase(j,1) ; --j ; } 
+       }
     }
-    cout << str ; 
+    return str;
 }
 int main() 
 {
     string a ; 
     cout << " moi nhap chuoi " ; getline(cin,a) ;
-    removeDuplicates(a) ;
+    cout<< removeDuplicates(a) ;
     return 0 ; 
 }

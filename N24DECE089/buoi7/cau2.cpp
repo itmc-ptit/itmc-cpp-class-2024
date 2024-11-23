@@ -3,7 +3,7 @@ using namespace std ;
 bool isPerfectNumber(int n) 
 {
     int sum = 0 ; 
-    for ( int i = 10 ; i <= n/2 ; ++i ) 
+    for ( int i = 1 ; i <= n/2 ; ++i ) 
     {
         if ( n % i == 0 ) { sum += i ; }
     }  
@@ -18,7 +18,7 @@ int main()
     {
         if ( isPerfectNumber(a) == true  ) 
         {
-            cout << " Day la so hoan hao : " ; 
+            cout << " Day la so hoan hao  " ; 
         }
         else 
         {

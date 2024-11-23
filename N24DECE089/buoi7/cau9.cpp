@@ -2,19 +2,17 @@
 using namespace std ; 
 int fibonacci(int n)
 {
-    int a = 1 , i = 1 , cnt = 0 , b ;
-    if ( n == 1 ) { return 1 ;} 
-    else if ( n == 2 ) { return 1 ; }
+    long long  a = 1 , i = 1 , cnt = 2 , b ;
+    if ( n == 0 ) { return 0 ; }
+    else if ( n == 1 || n == 2) { return 1 ;} 
     else if ( n > 2 )
     {
-         while ( b > 0 ) 
-         {
-             b = a + i ;
-             a = i ; 
-             i = b ; 
-             ++cnt ; 
-             if ( cnt == (n - 2)  ) { break ; }
-         }
+        for ( int z = 3 ; z <= n ; ++z)
+        {
+            b = a + i ;
+            a = i ; 
+            i = b ;
+        }
     }
     return b ; 
 }

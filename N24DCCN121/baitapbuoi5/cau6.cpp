@@ -6,7 +6,7 @@ int main(){
     int sum = 0;
     cout << "Nhap so:";
     cin >> a;
-    for(int i = 1;i < a;i++){
+    for(int i = 1;i < a/2;i++){
         if((a % i) == 0){
             sum += i;
         }

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 int main(){
@@ -9,7 +10,7 @@ int main(){
     if(a < 2){
         cout << a << " khong phai la so nguyen to";
     }else{
-        for(int i = 2;i < a;i++){
+        for(int i = 2;i < sqrt(a);i++){
             if(a % i == 0){
                 dem++;
                 break;

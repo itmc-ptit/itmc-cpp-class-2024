@@ -7,7 +7,7 @@ int main(){
     cin >> n;
     int a = int(n/10);
     int b = int(n%10);
-    if(sizeof(n) == 1){
+    if(n/10 < 1){
         switch(n){
             case 0:
                 cout << "Khong";

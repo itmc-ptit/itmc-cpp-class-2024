@@ -9,7 +9,7 @@ int main(){
     cin >> b;
     cout << "Nhap do dai canh 3:";
     cin >> c;
-    if((a + b) > c){
+    if(((a + b) > c) && ((b + c) > a) && ((a + c) > b)){
         if((a == b) && (a == c) && (b == c)){
             cout << "Day la tam giac deu";
             return 0;

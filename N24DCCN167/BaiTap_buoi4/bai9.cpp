@@ -9,19 +9,21 @@ int main()
     if (a == 0) {
         cout << "Ko phai pt bac 2. " << endl;
     }
-    else {
-         if (delta < 0)
-    {
-        cout << "PT vo nghiem. " << endl;
-    }
-    else if (delta > 0)
-    {
-        cout << "PT co hai nghiem phan biet: x1 = " << ((-b) + sqrt(delta)) / (2 * a) << " va x2 = " << ((-b) - sqrt(delta)) / (2 * a) << endl;
-        
-    }
     else
-        cout << "PT co nghiem kep: x = " << (-b) / (2 * a) << endl;
+    {
+        if (delta < 0)
+        {
+            cout << "PT vo nghiem. " << endl;
+        }
+        else if (delta > 0)
+        {
+            cout << "PT co hai nghiem phan biet: x1 = " << ((-b) + sqrt(delta)) / (2 * a) << " va x2 = " << ((-b) - sqrt(delta)) / (2 * a) << endl;
+        }
+        else
+            cout << "PT co nghiem kep: x = " << (-b) / (2 * a) << endl;
     }
+
+
 
     return 0;
 }

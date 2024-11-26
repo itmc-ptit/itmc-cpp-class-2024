@@ -30,7 +30,7 @@ void chenSo(vector<int> &arr)
     {
         if (arr[i] % 2 != 0)
         {
-            auto index = arr.begin() + i;
+            auto index = arr.begin() + i + 1;
             arr.insert(index, 13);
 
             break;

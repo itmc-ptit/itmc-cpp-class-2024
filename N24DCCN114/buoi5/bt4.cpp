@@ -1,11 +1,12 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 int main()
 {
     int a,snt=1;
     cout <<"nhap vao 1 so ngau nhien ";
     cin >>a;
-    for (int i=2;i<a;i++)
+    for (int i=2;i<sqrt(a);i++)
     {
         if (a%i==0)
         {

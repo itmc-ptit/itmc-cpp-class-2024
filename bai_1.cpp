@@ -18,3 +18,4 @@ int main(){
     cout<<"GT trung binh cua mang do la "<<trungbinh;
 return 0;
 }
+//da sua

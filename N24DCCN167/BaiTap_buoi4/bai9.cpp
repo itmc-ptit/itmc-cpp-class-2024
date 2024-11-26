@@ -7,7 +7,7 @@ int main()
     cin >> a >> b >> c;
     int delta = pow(b, 2) - 4 * a * c;
     if (a == 0) {
-        cout << "Ko phai pt bac 2. " << endl;
+        cout << "x = " << (-c) / b << endl;
     }
     else
     {

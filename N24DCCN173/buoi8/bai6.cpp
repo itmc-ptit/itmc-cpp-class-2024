@@ -11,10 +11,12 @@ int main()
     {
         v.push_back(tmp);
     }
+    cout << "[";
     for(int i = 0; i < v.size(); i++)
     {
-        if(i != v.size()-1) cout << v[i] << ",";
-        else cout << v[i];
+        if(i != v.size()-1) cout << '"' << v[i] << '"' << ",";
+        else cout <<'"' << v[i] << '"';
     }
+    cout << "]";
     return 0;
 }

@@ -8,7 +8,11 @@ int isFirstChar(string str, char c)
 }
 int main()
 {
-    cout << isFirstChar("ABC", 'A') << endl;
+    string str;
+    cin >> str;
+    char c;
+    cin >> c;
+    cout << isFirstChar(str, c) << endl;
 
     return 0;
 }

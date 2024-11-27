@@ -1,11 +1,12 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+
 int main()
 {
-    string str = "    Cau  lac    bo   ITMC    ";
+    string str = "    Cau   lac bo   ITMC  Cua  Toi";
     string newStr = "";
-    vector<string> words;
+    vector<string> res;
     for (int i = 0; i < str.length(); i++)
     {
         if (str[i] != ' ')
@@ -16,20 +17,24 @@ int main()
         {
             if (newStr != "")
             {
-                words.push_back(newStr);
+                res.push_back(newStr);
                 newStr = "";
             }
         }
     }
     if (str[str.length() - 1] != ' ')
-        words.push_back(newStr);
-    string res = "";
-    for (int i = 0; i < words.size(); i++)
+        res.push_back(newStr);
+    cout << "[";
+    for (int i = 0; i < res.size(); i++)
     {
-        res = res + words[i];
-        if (i != words.size() - 1)
-            res += ' ';
+        if (i == res.size() - 1)
+        {
+            cout << '"' << res[i] << '"';
+            break;
+        }
+        cout << '"' << res[i] << '"' << ",";
     }
-    cout << "'" << res << "'";
+    cout << "]";
+
     return 0;
 }

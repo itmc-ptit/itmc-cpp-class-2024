@@ -12,6 +12,7 @@ int main() {
         s1+=" ";
     }
     s1.pop_back();
+    s1='"'+s1+'"';
     cout<<s1;
     return 0;
 }

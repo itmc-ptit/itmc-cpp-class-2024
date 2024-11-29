@@ -2,8 +2,11 @@
 using namespace std;
 int isFirstChar(string str, char c)
 {
-    if (str.find(c) == 0)
-        return 0;
+    for (int i = 0; i < str.length(); i++)
+    {
+        if (str.find(c) != str.npos)
+            return str.find(c);
+    }
     return -1;
 }
 int main()

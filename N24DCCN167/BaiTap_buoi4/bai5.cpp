@@ -4,14 +4,14 @@ int main()
 {
     int a, b, c, d;
     cin >> a >> b >> c >> d;
-    int max = a;
-    if (b > max)
-        max = b;
-    if (c > max)
-        max = c;
-    if (d > max)
-        max = d;
-    cout << max << endl;
+    if (a > b && a > c && a > d)
+        cout << "max: " << a << endl;
+    if (b > a && b > c && b > d)
+        cout << "max: " << b << endl;
+    if (c > b && c > a && c > d)
+        cout << "max: " << c << endl;
+    if (d > b && d > c && d > a)
+        cout << "max: " << d << endl;
 
     return 0;
 }

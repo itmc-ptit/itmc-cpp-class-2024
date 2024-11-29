@@ -14,7 +14,7 @@ int main(){
     }
     for(int i = (n+1);i >= 0;i--){
         if(v[i] % 2 != 0){
-            v.insert(v.begin() + (i), 13);
+            v.insert(v.begin() + (i) + 1, 13);
             break;
         }
     }

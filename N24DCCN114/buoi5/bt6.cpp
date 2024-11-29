@@ -5,7 +5,7 @@ int main()
     int a,sum=0;
     cout <<"nhap vao 1 so ";
     cin >>a;
-    for (int i=1;i<a;i++)
+    for (int i=1;i<=a/2;i++)
     {
         if(a%i==0)
         {

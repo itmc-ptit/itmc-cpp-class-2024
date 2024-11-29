@@ -6,8 +6,9 @@ int main()
     int a, b, c;
     cin >> a >> b >> c;
     int delta = pow(b, 2) - 4 * a * c;
-    if (a == 0) {
-        cout << "x = " << (-c) / b << endl;
+    if (a == 0)
+    {
+        cout << "x = " << double(-c) / b << endl;
     }
     else
     {
@@ -22,8 +23,6 @@ int main()
         else
             cout << "PT co nghiem kep: x = " << (-b) / (2 * a) << endl;
     }
-
-
 
     return 0;
 }

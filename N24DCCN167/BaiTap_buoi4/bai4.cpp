@@ -9,6 +9,5 @@ int main()
     if (c > b && c > a && c > d) cout << c << " la so lon nhat." << endl;
     if (d > b && d > c && d > a) cout << d << " la so lon nhat." << endl;
 
-
     return 0;
 }

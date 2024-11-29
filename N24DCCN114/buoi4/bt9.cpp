@@ -8,7 +8,7 @@ int main()
     cin >>a>>b>>c;
     delta = b*b - 4*a*c;
     if ((a==0)&&(b==0)&&(c==0))
-    cout <<"pt co vo so nghiem";
+        cout <<"pt co vo so nghiem";
     else
         if ((a==0)&&(b!=0))
             cout <<"pt co 1 nghiem x="<<-c/b;

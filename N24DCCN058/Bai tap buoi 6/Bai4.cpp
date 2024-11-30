@@ -5,7 +5,7 @@ int main() {
     int n , Maxappear = 0 ;
     cin >> n ;
     int arr[n];
-    vector<int> firstappear , Save ;
+    vector<int> firstappear , Save ;  
     map <int , int> arr1 ;
     for(int i = 0 ; i < n ; i++){
         cin>> arr[i];

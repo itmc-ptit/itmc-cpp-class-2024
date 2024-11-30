@@ -11,7 +11,7 @@ int main() {
             arr.insert(arr.begin() + i + 1, 13);
             break ; 
         }
-    }
+    } 
     for ( int i = 0 ; i < arr.size() ;i++){cout << arr[i] << " ";}
     return 0;
 }
